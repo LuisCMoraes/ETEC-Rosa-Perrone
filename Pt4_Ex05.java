@@ -8,22 +8,18 @@ package Parte4;
 
 import javax.swing.JOptionPane;
 
-class Pt4_Ex05
-{
-    public static void main(String args[])
-    {
+class Pt4_Ex05{
+    public static void main(String args[]){
         //Matrizes:
-        int vnd[][] = new int[12][4];
+      
         int mes[] = new int[12];
         int sem[] = new int[4];
         //Variáveis:
         int l, c, ano = 0;
         String frase = "";
         //Código:
-        for(l=0;l<12;l++)
-        {
-            for(c=0;c<4;c++)
-            {
+       
+            for(c=0;c<4;c++){
                 vnd[l][c] = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor das vendas:\nMês: " + (l+1) + "\nSemana: " + (c+1)));
                 mes[l] += vnd[l][c];
                 sem[c] += vnd[l][c];
@@ -37,8 +33,8 @@ class Pt4_Ex05
                 "\nJul: " + mes[6] + "\nAgo: " + mes[7] + "\nSet: " + mes[8] +
                 "\nOut: " + mes[9] + "\nNov: " + mes[10] + "\nDez: " + mes[11] +
                 "\n\nTotal de vendas por semana:\n" +
-                "1º semana: " + sem[0] + "\n2º semana: " + sem[1] + "\n3º semana: " + sem[2] + "\n4º semana: " + sem[3] +
+               
                 "\n\nTotal de vendas no ano:\n" + ano;
-        JOptionPane.showMessageDialog(null, frase);
+       
     }
 }
