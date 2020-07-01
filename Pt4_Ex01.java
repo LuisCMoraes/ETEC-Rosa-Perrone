@@ -4,10 +4,8 @@ package Parte4;
 
 import javax.swing.JOptionPane;
 
-class Pt4_Ex01
-{
-    public static void main(String args[])
-    {
+class Pt4_Ex01{
+    public static void main(String args[]){
         //Matriz:
         int m[][] = new int[3][5];
         //Variáveis:
@@ -15,13 +13,10 @@ class Pt4_Ex01
         String mat = "";
         String frase = "";
         //Código:
-        for(l=0;l<3;l++)
-        {
-            for(c=0;c<5;c++)
-            {
+        for(l=0;l<3;l++){
+            for(c=0;c<5;c++){
                 m[l][c] = Integer.parseInt(JOptionPane.showInputDialog("Preencha a matriz:\n" + "Linha: " + (l+1) + "\nColuna: " + (c+1)));
-                if(m[l][c] > 15 && m[l][c] < 20)
-                {
+                if(m[l][c] > 15 && m[l][c] < 20){
                     cont++;
                 }
                 //String para exibir a matriz no final:
