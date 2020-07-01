@@ -1,15 +1,13 @@
 package Parte4;
 
 /*2 – Crie um programa que preencha uma matriz 2 X 4 com números inteiros, calcule e mostre:
- *  A quantidade de elementos entre 12 e 20 em cada linha;
- *  A média dos elementos pares da matriz.*/
+ * A quantidade de elementos entre 12 e 20 em cada linha;
+ * A média dos elementos pares da matriz.*/
 
 import javax.swing.JOptionPane;
 
-class Pt4_Ex02
-{
-    public static void main(String args[])
-    {
+class Pt4_Ex02{
+    public static void main(String args[]){
         //Matriz:
         int m[][] = new int[2][4];
         //Variáveis:
@@ -18,18 +16,14 @@ class Pt4_Ex02
         String mat = "";
         String frase = "Qtd de elementos entre 12 e 20:";
         //Código:
-        for(l=0;l<2;l++)
-        {
+        for(l=0;l<2;l++){
             cont = 0;
-            for(c=0;c<4;c++)
-            {
+            for(c=0;c<4;c++){
                 m[l][c] = Integer.parseInt(JOptionPane.showInputDialog("Preencha a matriz:\n" + "Linha: " + (l+1) + "\nColuna: " + (c+1)));
-                if(m[l][c] > 12 && m[l][c] < 20)
-                {
+                if(m[l][c] > 12 && m[l][c] < 20){
                     cont++;
                 }
-                if(m[l][c] %2 == 0)
-                {
+                if(m[l][c] %2 == 0){
                     par++;
                     med = med + m[l][c];
                 }
