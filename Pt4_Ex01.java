@@ -18,7 +18,7 @@ class Pt4_Ex01
         for(l=0;l<3;l++)
         {
             for(c=0;c<5;c++)
-            {
+            { fegtrtrtrweqt erh yaey5e
                 m[l][c] = Integer.parseInt(JOptionPane.showInputDialog("Preencha a matriz:\n" + "Linha: " + (l+1) + "\nColuna: " + (c+1)));
                 if(m[l][c] > 15 && m[l][c] < 20)
                 {
