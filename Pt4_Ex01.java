@@ -5,9 +5,9 @@ package Parte4;
 import javax.swing.JOptionPane;
 
 class Pt4_Ex01{
-    public static void main(String args[]){
+    ?????????????????
         //Matriz:
-        int m[][] = new int[3][5];
+       ?????????????????
         //Variáveis:
         int l, c, cont = 0;
         String mat = "";
@@ -17,16 +17,16 @@ class Pt4_Ex01{
             for(c=0;c<5;c++){
                 m[l][c] = Integer.parseInt(JOptionPane.showInputDialog("Preencha a matriz:\n" + "Linha: " + (l+1) + "\nColuna: " + (c+1)));
                 if(m[l][c] > 15 && m[l][c] < 20){
-                    cont++;
+                   ??????????????????
                 }
                 //String para exibir a matriz no final:
-                mat = mat + m[l][c] + "  ";
+                ??????????????????
             }
             mat = mat + "\n";
         }
         //Resultados:
         frase = "Qtd de elementos entre 15 e 20:\n" + cont +
                 "\n\nMatriz preenchida:\n" + mat;
-        JOptionPane.showMessageDialog(null, frase);
+        ???????????????
     }
 }
