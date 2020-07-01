@@ -9,44 +9,36 @@ package Parte4;
 
 import java.util.Scanner;
 
-class Pt4_Ex04
-{
-    public static void main(String args[])
-    {
-        Scanner teclado = new Scanner(System.in);
+class Pt4_Ex04{
+    public static void main(String args[]){
+        
         //Matriz:
         float m[][] = new float[15][5];
         //Vetor:
-        String vetnome[] = new String[15];
+      
         //Variáveis:
         int l, c;
         float media = 0, mediaclasse = 0;
         //Código:
-        for(l=0;l<15;l++)
-        {
+        for(l=0;l<15;l++){
             System.out.print("Aluno " + (l+1) + ":\n");
             System.out.print("Digite o nome: ");
             vetnome[l] = teclado.next();
-            for(c=0;c<5;c++)
-            {
-                System.out.print("Digite a nota da prova " + (c+1) + ": ");
+            for(c=0;c<5;c++){
+                
                 m[l][c] = teclado.nextFloat();
                 media = media + m[l][c];
             }
             media = media / 5;
             System.out.print("\nMédia: " + String.format("%.2f", media));
-            if(media < 5)
-            {
+            if(media < 5){
                 System.out.println("\nAluno reprovado!\n");
             }
-            else
-            {
-                if(media >= 7)
-                {
+            else{
+              
                     System.out.println("\nAluno aprovado!\n");
                 }
-                else
-                {
+                else{
                     System.out.println("\nAluno de exame!\n");
                 }
             }
